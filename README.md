@@ -29,5 +29,5 @@ FitLog is a responsive workout library and daily planning application. Users can
 
 ## Submission Links
 
-- Live Link: Pending deployment
+- Live Link: https://assignments6.pages.dev/
 - GitHub Repository: https://github.com/kamrullab/assignment-6
