@@ -3,7 +3,7 @@ import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="container-shell mt-12 overflow-hidden bg-panel">
+    <section className="container-shell mt-6 sm:mt-12 overflow-hidden bg-panel">
       <div className="grid min-h-[448px] items-center gap-10 px-8 py-14 md:grid-cols-[1fr_0.9fr] md:px-14 lg:px-14">
         <div className="max-w-[570px]">
           <p className="text-[11px] font-bold tracking-[0.22em] text-acid">WORKOUT LIBRARY</p>

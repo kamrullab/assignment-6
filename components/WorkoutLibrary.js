@@ -30,7 +30,7 @@ export default function WorkoutLibrary() {
   }, []);
 
   return (
-    <section id="library" className="container-shell scroll-mt-28 py-16">
+    <section id="library" className="container-shell scroll-mt-28 py-12 sm:py-16">
       <div className="mb-8">
         <h2 className="font-display text-3xl font-bold uppercase tracking-wide">THE LIBRARY</h2>
         <p className="mt-2 text-sm text-muted">Twelve lifts covering every major muscle group.</p>

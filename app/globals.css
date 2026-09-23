@@ -23,6 +23,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
+  overflow-x: clip;
   min-width: 320px;
   margin: 0;
   background: var(--background);

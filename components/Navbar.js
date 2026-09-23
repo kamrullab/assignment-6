@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#1c1f26] bg-[#0c0d10]/95 backdrop-blur">
-      <div className="container-shell grid min-h-20 grid-cols-[auto_1fr_auto] items-center gap-3">
+      <div className="container-shell grid min-h-20 grid-cols-[auto_1fr_auto] items-center gap-2 sm:gap-3">
         <Link href="/" className="flex items-center gap-2" aria-label="FitLog home">
           <Image src="/logo.png" width={28} height={28} alt="" priority />
           <span className="font-display text-xl font-bold tracking-wide">FITLOG</span>

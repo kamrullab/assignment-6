@@ -39,12 +39,12 @@ export default async function WorkoutDetailsPage({ params }) {
   return (
     <main className="container-shell py-12">
       <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-14">
-        <section className="relative min-h-[420px] overflow-hidden bg-[#171a21] lg:sticky lg:top-32 lg:min-h-[735px]">
+        <section className="relative min-h-[360px] overflow-hidden sm:min-h-[420px] bg-[#171a21] lg:sticky lg:top-32 lg:min-h-[735px]">
           <Image src={workout.image} alt={workout.name} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
         </section>
 
         <section>
-          <h1 className="font-display text-4xl font-bold uppercase leading-tight tracking-wide">{workout.name}</h1>
+          <h1 className="font-display text-3xl font-bold sm:text-4xl uppercase leading-tight tracking-wide">{workout.name}</h1>
           <p className="mt-3 max-w-xl text-base leading-7 text-muted">{workout.description}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">

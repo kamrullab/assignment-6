@@ -5,8 +5,8 @@ import WorkoutStats from "@/components/WorkoutStats";
 
 export default function PlanWorkoutRow({ workout, tab, onDone, onRemove }) {
   return (
-    <article className={`grid gap-5 border border-[#232732] bg-[#14171e] p-4 transition sm:grid-cols-[130px_1fr_auto] sm:items-center ${workout.done ? "opacity-55" : ""}`}>
-      <div className="relative aspect-[1.8/1] overflow-hidden bg-[#1a1d24] sm:aspect-auto sm:h-[82px]">
+    <article className={`grid gap-5 border border-[#232732] bg-[#14171e] p-4 transition lg:grid-cols-[130px_1fr_auto] lg:items-center ${workout.done ? "opacity-55" : ""}`}>
+      <div className="relative aspect-[1.8/1] overflow-hidden bg-[#1a1d24] lg:aspect-auto lg:h-[82px]">
         <Image src={workout.image} alt="" fill sizes="130px" className="object-cover" />
       </div>
 
@@ -16,7 +16,7 @@ export default function PlanWorkoutRow({ workout, tab, onDone, onRemove }) {
         <div className="mt-3"><WorkoutStats workout={workout} compact /></div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-2 sm:justify-end">
+      <div className="flex flex-wrap items-center gap-2 lg:justify-end">
         <Link href={`/workouts/${workout.id}`} className="inline-flex h-9 items-center border border-[#374151] px-4 text-xs text-gray-200 transition hover:border-acid hover:text-acid">
           View Details
         </Link>
