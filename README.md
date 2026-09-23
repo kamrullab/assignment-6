@@ -25,7 +25,8 @@ FitLog is a responsive workout library and daily planning application. Users can
 5. Mark planned workouts as done or remove them with toast notifications.
 6. Sort the current workout list by duration, calories, or rating.
 7. Preserve planned and saved workouts after page reload using local storage.
-8. Show loading, error, empty, and custom 404 states across the application.
+8. Search the workout library, Today's Plan, or Saved list by workout name or muscle-group tag.
+9. Show loading, error, empty, and custom 404 states across the application.
 
 ## Submission Links
 
