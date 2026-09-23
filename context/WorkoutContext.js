@@ -15,6 +15,8 @@ export function WorkoutProvider({ children }) {
     try {
       const stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
       if (stored) {
+        // Hydrate the external localStorage snapshot after mounting.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setPlan(Array.isArray(stored.plan) ? stored.plan : []);
         setSaved(Array.isArray(stored.saved) ? stored.saved : []);
       }

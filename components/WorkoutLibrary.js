@@ -25,6 +25,8 @@ export default function WorkoutLibrary() {
 
   useEffect(() => {
     const controller = new AbortController();
+    // Initial client fetch intentionally drives the loading state.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadWorkouts(controller.signal);
     return () => controller.abort();
   }, []);
