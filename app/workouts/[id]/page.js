@@ -1,7 +1,16 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import WorkoutActions from "@/components/WorkoutActions";
-import { getWorkout } from "@/lib/api";
+import { getWorkout, getWorkouts } from "@/lib/api";
+
+export const dynamicParams = false;
+
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  const workouts = await getWorkouts();
+  return workouts.map((workout) => ({ id: String(workout.id) }));
+}
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
@@ -64,9 +73,7 @@ export default async function WorkoutDetailsPage({ params }) {
             </ol>
           </div>
 
-          <div className="mt-10">
-            <WorkoutActions workout={workout} />
-          </div>
+          <div className="mt-10"><WorkoutActions workout={workout} /></div>
         </section>
       </div>
     </main>
