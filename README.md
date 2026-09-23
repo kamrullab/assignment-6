@@ -1,61 +1,33 @@
-# FitLog — Workout Library
+# FitLog
 
-FitLog is a responsive, dark-themed workout library built with Next.js. It lets users browse twelve exercises, inspect complete workout instructions, build a five-exercise plan for today, and save workouts for later. Plan state persists in the browser so the workout log survives page reloads.
+## Short Description
 
-## Features
+FitLog is a responsive workout library and daily planning application. Users can browse exercises, view complete workout details, add up to five workouts to today's plan, save workouts for later, and track total exercises, minutes, and calories.
 
-- Responsive workout library with all 12 exercises from the FitLog API
-- Dynamic workout detail pages with equipment, difficulty, sets, reps, duration, calories, rating, and instructions
-- Today's Plan with a maximum of five workouts and live exercise, minute, and calorie totals
-- Saved workout list with synchronized navbar counters
-- Mark-as-done and remove actions with toast notifications
-- Duration, calories, and rating sorting on the My Plan page
-- Loading, API error, empty-list, and custom 404 states
-- Local storage persistence for plan and saved workouts
-- Mobile, tablet, and desktop layouts based on the supplied Figma design
+## Technologies Used
 
-## Technologies
-
-- Next.js 15 with the App Router
-- React 19
-- Tailwind CSS 4
+- Next.js
+- React
+- Next.js App Router
+- Tailwind CSS
 - Context API
-- Lucide React icons
+- Lucide React
 - React Hot Toast
+- Local Storage
 - FitLog REST API
 
-## Routes
+## Key Features
 
-| Route | Purpose |
-| --- | --- |
-| `/` | Hero and workout library |
-| `/workouts/[id]` | Dynamic workout details |
-| `/my-plan` | Today's Plan, Saved workouts, metrics, and sorting |
-| Any invalid URL | Custom 404 page |
+1. Browse all 12 workouts from the FitLog API in a responsive card grid.
+2. View dynamic workout details with equipment, difficulty, sets, reps, duration, calories, rating, and instructions.
+3. Add workouts to Today's Plan and see live Plan counter and workout metrics.
+4. Save workouts for later and manage them from the Saved tab.
+5. Mark planned workouts as done or remove them with toast notifications.
+6. Sort the current workout list by duration, calories, or rating.
+7. Preserve planned and saved workouts after page reload using local storage.
+8. Show loading, error, empty, and custom 404 states across the application.
 
-## API
+## Submission Links
 
-- All workouts: `https://api.abcz.workers.dev/api/fitlog`
-- Single workout: `https://api.abcz.workers.dev/api/fitlog/:id`
-
-## Run Locally
-
-```bash
-git clone https://github.com/kamrullab/assignment-6.git
-cd assignment-6
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Quality Checks
-
-```bash
-npm run lint
-npm run build
-```
-
-## Repository
-
-[github.com/kamrullab/assignment-6](https://github.com/kamrullab/assignment-6)
+- Live Link: Pending deployment
+- GitHub Repository: https://github.com/kamrullab/assignment-6
