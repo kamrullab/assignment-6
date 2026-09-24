@@ -30,14 +30,14 @@ export default function Navbar() {
           <Link href="/my-plan" className={navClass(isPlan)}>My Plan</Link>
         </nav>
 
-        <Link href="/my-plan" className="group flex items-center gap-2 justify-self-end" aria-label={`Plan ${planCount}, Saved ${savedCount}`}>
-          <span className="flex h-6 items-center gap-1.5 rounded-full bg-acid px-2.5 text-[11px] font-bold text-[#0c0d10] transition-colors duration-200 group-hover:bg-[#baf000]">
+        <div className="flex items-center gap-2 justify-self-end">
+          <Link href="/my-plan" className="flex h-6 items-center gap-1.5 rounded-full bg-acid px-2.5 text-[11px] font-bold text-[#0c0d10] transition-colors duration-200 hover:bg-[#baf000]" aria-label={`Plan ${planCount}`}>
             Plan <b>{hydrated ? planCount : 0}</b>
-          </span>
-          <span className="flex h-6 items-center gap-1.5 rounded-full border border-[#374151] px-2.5 text-[11px] font-medium text-gray-200 transition-colors duration-200 group-hover:border-acid group-hover:text-acid">
+          </Link>
+          <Link href="/my-plan" className="flex h-6 items-center gap-1.5 rounded-full border border-[#374151] px-2.5 text-[11px] font-medium text-gray-200 transition-colors duration-200 hover:border-acid hover:text-acid" aria-label={`Saved ${savedCount}`}>
             Saved <b>{hydrated ? savedCount : 0}</b>
-          </span>
-        </Link>
+          </Link>
+        </div>
       </div>
       <nav className="container-shell flex border-t border-[#1c1f26] sm:hidden" aria-label="Mobile navigation">
         <Link href="/#library" className={`flex-1 py-2.5 text-center text-xs font-semibold transition-colors duration-200 hover:bg-[#151921] hover:text-acid ${!isPlan ? "text-acid" : "text-muted"}`}>Workouts</Link>
