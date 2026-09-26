@@ -4,10 +4,10 @@ import { ArrowDown } from "lucide-react";
 export default function Hero() {
   return (
     <section className="container-shell mt-6 sm:mt-12 overflow-hidden bg-panel">
-      <div className="grid min-h-[448px] items-center gap-10 px-8 py-14 md:grid-cols-[1fr_0.9fr] md:px-14 lg:px-14">
-        <div className="max-w-[570px]">
+      <div className="grid min-h-[448px] items-center gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-[1fr_0.9fr] lg:gap-10 lg:px-14 lg:py-14">
+        <div className="min-w-0 max-w-[570px]">
           <p className="text-[11px] font-bold tracking-[0.22em] text-acid">WORKOUT LIBRARY</p>
-          <h1 className="mt-5 font-display text-[clamp(2.7rem,6vw,3.75rem)] font-bold uppercase leading-[1.15] tracking-tight">
+          <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[3.75rem] font-bold uppercase leading-[1.15] tracking-tight">
             TRAIN WITH INTENT. LOG EVERY SET.
           </h1>
           <p className="mt-6 max-w-[550px] text-sm leading-7 text-muted sm:text-base">
@@ -17,7 +17,7 @@ export default function Hero() {
             <ArrowDown size={16} strokeWidth={2.5} /> BROWSE WORKOUTS
           </a>
         </div>
-        <div className="relative mx-auto aspect-square w-full max-w-[334px]">
+        <div className="relative mx-auto aspect-square w-full max-w-[280px] sm:max-w-[334px]">
           <Image src="/banner.png" alt="Athlete training with dumbbells" fill sizes="(max-width: 768px) 80vw, 334px" className="object-contain" priority />
         </div>
       </div>

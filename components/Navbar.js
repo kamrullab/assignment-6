@@ -19,10 +19,10 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#1c1f26] bg-[#0c0d10]/95 backdrop-blur">
-      <div className="container-shell grid min-h-20 grid-cols-[auto_1fr_auto] items-center gap-2 sm:gap-3">
-        <Link href="/" className="group flex items-center gap-2" aria-label="FitLog home">
+      <div className="container-shell grid min-h-20 grid-cols-[minmax(0,1fr)_auto] items-center gap-2 sm:grid-cols-[auto_1fr_auto] sm:gap-3">
+        <Link href="/" className="group flex min-w-0 items-center gap-2" aria-label="FitLog home">
           <Image src="/logo.png" width={28} height={28} alt="" priority />
-          <span className="font-display text-xl font-bold tracking-wide transition-colors duration-200 group-hover:text-acid">FITLOG</span>
+          <span className="font-display text-xl font-bold tracking-wide transition-colors duration-200 group-hover:text-acid max-[359px]:hidden">FITLOG</span>
         </Link>
 
         <nav className="hidden justify-self-center sm:flex sm:items-center sm:gap-2" aria-label="Primary navigation">
@@ -30,7 +30,7 @@ export default function Navbar() {
           <Link href="/my-plan" className={navClass(isPlan)}>My Plan</Link>
         </nav>
 
-        <div className="flex items-center gap-2 justify-self-end">
+        <div className="flex shrink-0 items-center gap-1.5 justify-self-end sm:gap-2">
           <Link href="/my-plan" className="flex h-6 items-center gap-1.5 rounded-full bg-acid px-2.5 text-[11px] font-bold text-[#0c0d10] transition-colors duration-200 hover:bg-[#baf000]" aria-label={`Plan ${planCount}`}>
             Plan <b>{hydrated ? planCount : 0}</b>
           </Link>

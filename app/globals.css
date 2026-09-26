@@ -37,5 +37,5 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   outline-offset: 3px;
 }
 ::selection { background: var(--acid); color: #0c0d10; }
-.container-shell { width: min(100% - 3rem, 1232px); margin-inline: auto; }
-@media (max-width: 640px) { .container-shell { width: min(100% - 2rem, 1232px); } }
+.container-shell { width: min(calc(100% - 3rem), 1232px); margin-inline: auto; }
+@media (max-width: 640px) { .container-shell { width: min(calc(100% - 2rem), 1232px); } }

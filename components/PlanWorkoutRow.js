@@ -17,11 +17,11 @@ export default function PlanWorkoutRow({ workout, tab, onDone, onRemove }) {
       </div>
 
       <div className="flex flex-wrap items-center gap-2 lg:justify-end">
-        <Link href={`/workouts/${workout.id}`} className="inline-flex h-9 items-center border border-[#374151] px-4 text-xs text-gray-200 transition hover:border-acid hover:text-acid">
+        <Link href={`/workouts/${workout.id}`} className="inline-flex h-9 w-full items-center justify-center border border-[#374151] px-4 sm:w-auto text-xs text-gray-200 transition hover:border-acid hover:text-acid">
           View Details
         </Link>
         {tab === "plan" && (
-          <button type="button" onClick={() => onDone(workout.id)} className={`inline-flex h-9 items-center gap-2 px-4 text-xs font-semibold transition ${workout.done ? "border border-acid text-acid" : "bg-acid text-[#0c0d10] hover:bg-[#c2f800]"}`}>
+          <button type="button" onClick={() => onDone(workout.id)} className={`inline-flex h-9 w-full items-center justify-center gap-2 px-4 sm:w-auto text-xs font-semibold transition ${workout.done ? "border border-acid text-acid" : "bg-acid text-[#0c0d10] hover:bg-[#c2f800]"}`}>
             <Check size={15} /> {workout.done ? "Done" : "Mark as Done"}
           </button>
         )}
